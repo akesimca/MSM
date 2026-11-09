@@ -149,7 +149,7 @@
 <body>
 
 <header class="banner-wrap">
-  <img class="banner" src="banner.jpg"
+  <img class="banner" src="banner.png"
        alt="คลังข้อสอบ สพป.ร้อยเอ็ด เขต 2 ระดับชั้น ป.1–ม.3 O-NET RT NT PISA">
 </header>
 
@@ -169,22 +169,32 @@
 
 <script>
   /* ===== แก้ไขลิงก์ Google Drive ที่นี่ (แทนที่ # ด้วยลิงก์โฟลเดอร์จริง) ===== */
- const grades = [
-  {title:"ข้อสอบ ป.1", sub:"ระดับชั้นประถมศึกษาปีที่ 1", icon:"🎒", badge:"ป.1", theme:"t-red",    url:"#"},
-  {title:"ข้อสอบ ป.2", sub:"ระดับชั้นประถมศึกษาปีที่ 2", icon:"✏️", badge:"ป.2", theme:"t-orange", url:"#"},
-  {title:"ข้อสอบ ป.3", sub:"ระดับชั้นประถมศึกษาปีที่ 3", icon:"📒", badge:"ป.3", theme:"t-green",  url:"#"},
-  {title:"ข้อสอบ ป.4", sub:"ระดับชั้นประถมศึกษาปีที่ 4", icon:"🔬", badge:"ป.4", theme:"t-blue",   url:"#"},
-  {title:"ข้อสอบ ป.5", sub:"ระดับชั้นประถมศึกษาปีที่ 5", icon:"🧮", badge:"ป.5", theme:"t-purple", url:"#"},
-  {title:"ข้อสอบ ป.6", sub:"ระดับชั้นประถมศึกษาปีที่ 6", icon:"🎓", badge:"ป.6", theme:"t-pink",   url:"#"},
-  {title:"ข้อสอบ ม.1", sub:"ระดับชั้นมัธยมศึกษาปีที่ 1", icon:"🧭", badge:"ม.1", theme:"t-teal",   url:"#"},
-  {title:"ข้อสอบ ม.2", sub:"ระดับชั้นมัธยมศึกษาปีที่ 2", icon:"🧪", badge:"ม.2", theme:"t-blue",   url:"#"},
-  {title:"ข้อสอบ ม.3", sub:"ระดับชั้นมัธยมศึกษาปีที่ 3", icon:"🚀", badge:"ม.3", theme:"t-purple", url:"#"}
+const grades = [
+
+  {title:"ข้อสอบ ป.1", sub:"ระดับชั้นประถมศึกษาปีที่ 1", icon:"🎒", badge:"ป.1", theme:"t-red",    url:"https://drive.google.com/drive/folders/1GbxG3lHg7UInJGKpSJHVqX9R2gE096Ml?usp=drive_link"},
+
+  {title:"ข้อสอบ ป.2", sub:"ระดับชั้นประถมศึกษาปีที่ 2", icon:"✏️", badge:"ป.2", theme:"t-orange", url:"https://drive.google.com/drive/folders/1rU9P3n5ic_EVASUpta9xy8Tj-aTUPXuT?usp=drive_link"},
+
+  {title:"ข้อสอบ ป.3", sub:"ระดับชั้นประถมศึกษาปีที่ 3", icon:"📒", badge:"ป.3", theme:"t-green",  url:"https://drive.google.com/drive/folders/1q32VYBbWikA-WFkPFRDM3qUAOu5wx_YE?usp=drive_link"},
+
+  {title:"ข้อสอบ ป.4", sub:"ระดับชั้นประถมศึกษาปีที่ 4", icon:"🔬", badge:"ป.4", theme:"t-blue",   url:"https://drive.google.com/drive/folders/1nkO6TdvjQwllRLhPc7B4yA5SLJL7UMdF?usp=drive_link"},
+
+  {title:"ข้อสอบ ป.5", sub:"ระดับชั้นประถมศึกษาปีที่ 5", icon:"🧮", badge:"ป.5", theme:"t-purple", url:"https://drive.google.com/drive/folders/1nkO6TdvjQwllRLhPc7B4yA5SLJL7UMdF?usp=drive_link"},
+
+  {title:"ข้อสอบ ป.6", sub:"ระดับชั้นประถมศึกษาปีที่ 6", icon:"🎓", badge:"ป.6", theme:"t-pink",   url:"https://drive.google.com/drive/folders/1lab9aOKz-pDFXypQTnhgXmF-Tk6VI1Ch?usp=drive_link"},
+
+  {title:"ข้อสอบ ม.1", sub:"ระดับชั้นมัธยมศึกษาปีที่ 1", icon:"🧭", badge:"ม.1", theme:"t-teal",   url:"https://drive.google.com/drive/folders/1GbxG3lHg7UInJGKpSJHVqX9R2gE096Ml?usp=drive_link"},
+
+  {title:"ข้อสอบ ม.2", sub:"ระดับชั้นมัธยมศึกษาปีที่ 2", icon:"🧪", badge:"ม.2", theme:"t-blue",   url:"https://drive.google.com/drive/folders/1_QWWFBCoGCyBT7GaD5N9dOU-xzVWlGPt?usp=drive_link"},
+
+  {title:"ข้อสอบ ม.3", sub:"ระดับชั้นมัธยมศึกษาปีที่ 3", icon:"🚀", badge:"ม.3", theme:"t-purple", url:"https://drive.google.com/drive/folders/1IC9itWMCt_Q5itl5GCaAicNVa7PdeutG?usp=drive_link"}
+
 ];
-  const national = [
-    {title:"ข้อสอบ NT",    sub:"การทดสอบระดับชาติ ป.3",              icon:"📖", badge:"NT",    theme:"t-green",  url:"#"},
-    {title:"ข้อสอบ RT",    sub:"การประเมินความสามารถด้านการอ่าน ป.1", icon:"🔤", badge:"RT",    theme:"t-orange", url:"#"},
-    {title:"ข้อสอบ O-NET", sub:"การทดสอบทางการศึกษาระดับชาติ",       icon:"🏆", badge:"O-NET", theme:"t-blue",   url:"#"},
-    {title:"ข้อสอบ PISA",  sub:"การประเมินผลนักเรียนนานาชาติ",        icon:"🌏", badge:"PISA",  theme:"t-purple", url:"#"}
+    const national = [
+    {title:"ข้อสอบ NT",    sub:"การทดสอบระดับชาติ ป.3",              icon:"📖", badge:"NT",    theme:"t-green",  url:"https://drive.google.com/drive/folders/1cLa72UmV1CQM0sTNfCB4MoGLnBl9k9LP?usp=drive_link"},
+    {title:"ข้อสอบ RT",    sub:"การประเมินความสามารถด้านการอ่าน ป.1", icon:"🔤", badge:"RT",    theme:"t-orange", url:"https://drive.google.com/drive/folders/1Nb-qLhD1eUi7MLPWvzhn1K0yS2QE7GRA?usp=drive_link"},
+    {title:"ข้อสอบ O-NET", sub:"การทดสอบทางการศึกษาระดับชาติ",       icon:"🏆", badge:"O-NET", theme:"t-blue",   url:"https://drive.google.com/drive/folders/196XfRqtmZz-qZEXNVSqd9xtDTW6vrU11?usp=drive_link"},
+    {title:"ข้อสอบ PISA",  sub:"การประเมินผลนักเรียนนานาชาติ",        icon:"🌏", badge:"PISA",  theme:"t-purple", url:"https://drive.google.com/drive/folders/1_XQM3O5zQZmiuh3gz6G2jfNix6Lgg_N2?usp=drive_link"}
   ];
   /* ======================================================================= */
 
